@@ -1,1 +1,2 @@
-baseurl: /justin
+encoding: 'utf-8'
+markdown: kramdown

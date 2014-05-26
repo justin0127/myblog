@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Justin Huang's Thoughts on design and code</title>
- <link href="http://ruoyusun.com/atom.xml" rel="self"/>
- <link href="http://ruoyusun.com"/>
+ <link href="http://justin0127.github.com{{site.baseurl}}/atom.xml" rel="self"/>
+ <link href="http://justin0127.github.com{{site.baseurl}}"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://gitblog.huangjiading.com</id>
+ <id>http://justin0127.github.com{{site.baseurl}}</id>
  <author>
    <name>Justin Huang</name>
    <email>pluswolfboy@gmail.com</email>
@@ -17,9 +17,9 @@ layout: nil
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://gitblog.huangjiading.com{{ post.url }}"/>
+   <link href="http://justin0127.github.com{{site.baseurl}}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://gitblog.huangjiading.com{{ post.id }}</id>
+   <id>http://justin0127.github.com{{site.baseurl}}{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}

@@ -1,0 +1,10 @@
+#过滤的file名
+*.mdb
+*.ldb
+*.sln
+*.config
+
+#过滤的目录
+Debug/
+Release/
+obj/

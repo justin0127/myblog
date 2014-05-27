@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2014-5-27-工作日志
+title: 用.gitignore控制git管理跟踪文件
 ---
 
 ##2014-5-26-how-to-ignore-files-folders-with-gitignore

@@ -14,17 +14,22 @@ git提交的时候常常会把一些不需要提交的文件也提交上去，�
 
 文件内容如下:
 
-#过滤数据库文件、sln解决方案文件、配置文件
-*.mdb
-*.ldb
-*.sln
-*.config
+	#过滤数据库文件、sln解决方案文件、配置文件
+	*.mdb
+	*.ldb
+	*.sln
+	*.config
 {: .prettyprint .lang-shell}
 
 
-#过滤文件夹Debug,Release,obj
-Debug/
-Release/
-obj/
+	#过滤文件夹Debug,Release,obj
+	Debug/
+	Release/
+	obj/
 {: .prettyprint .lang-shell}
 	
+如果在建立.gitignore 之前就提交过，则需要把index.cache和history.cache都删掉，重新commit
+
+	git rm -f myfile/history.cache
+	git rm -f myfile/index.cache
+{: .prettyprint .lang-shell}
